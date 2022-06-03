@@ -17,10 +17,10 @@ export class AppComponent {
     // console.warn(val)
   }
   conversion(item:string) {
-    if(item==='option1') {
+    if(item=='option1') {
       const far: { type: any, num: any } = {
         type: 'C',
-        num: (this.good - 32)
+        num: (this.good - 32) * 0.555
       };
       this.display1=far.num;
       this.display2=far.type;
