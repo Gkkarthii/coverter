@@ -20,7 +20,7 @@ export class AppComponent {
     if(item==='option1') {
       const far: { type: any, num: any } = {
         type: 'C',
-        num: (this.good - 32)*1.8
+        num: (this.good - 32)
       };
       this.display1=far.num;
       this.display2=far.type;
