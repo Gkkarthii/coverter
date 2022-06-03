@@ -1,0 +1,27 @@
+<form class="model my-5">
+  <div class="box">
+  <div class="contents m-5">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Enter Temperature</mat-label>
+    <input #temps type="number" matInput placeholder="Temperature" (keyup)="getValue(temps.value)" value="">
+  </mat-form-field>
+  <br>
+  <br>
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="option1">Celcius</mat-option>
+      <mat-option value="option2">Farenhit</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <br>
+  <button mat-raised-button color="primary" (click)="conversion(selected)">Convert</button>
+  <br>
+  <br>
+  <p>{{display1}}<sup>o</sup>{{display2}}</p>
+  </div>
+  
+</div> 
+
+</form>
